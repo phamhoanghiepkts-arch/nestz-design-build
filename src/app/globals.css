@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+@theme {
+  --color-charcoal: #171717;
+  --color-ink: #2a2621;
+  --color-paper: #f7f1e8;
+  --color-clay: #b8582b;
+  --color-concrete: #d8d0c4;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #f7f1e8;
+  color: #171717;
+  font-family:
+    Montserrat, Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+}
+
+.font-montserrat {
+  font-family:
+    Montserrat, Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+}
+
+::selection {
+  background: #b8582b;
+  color: #f7f1e8;
+}
+
+input,
+textarea,
+select,
+button {
+  font: inherit;
+  border-radius: 0;
+}
+
+.site-grid {
+  background-image:
+    linear-gradient(rgba(23, 23, 23, 0.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(23, 23, 23, 0.055) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+.gallery-tile {
+  background:
+    linear-gradient(135deg, rgba(23, 23, 23, 0.86), rgba(23, 23, 23, 0.24)),
+    repeating-linear-gradient(
+      90deg,
+      #c9bdae 0,
+      #c9bdae 16px,
+      #bfb2a2 16px,
+      #bfb2a2 18px
+    );
+}
+
+.worksite-placeholder {
+  background:
+    linear-gradient(180deg, rgba(23, 23, 23, 0.18), rgba(23, 23, 23, 0.82)),
+    repeating-linear-gradient(
+      135deg,
+      #d8d0c4 0,
+      #d8d0c4 18px,
+      #c8bcad 18px,
+      #c8bcad 20px
+    );
+}
+
+.worksite-detail {
+  background:
+    linear-gradient(135deg, rgba(184, 88, 43, 0.86), rgba(23, 23, 23, 0.72)),
+    linear-gradient(90deg, rgba(247, 241, 232, 0.3) 1px, transparent 1px),
+    linear-gradient(rgba(247, 241, 232, 0.3) 1px, transparent 1px);
+  background-size: auto, 28px 28px, 28px 28px;
+  color: #f7f1e8;
+}
