@@ -53,6 +53,7 @@ export default function Home() {
                 {hero.cta.label}
               </a>
             </div>
+            <p className="mt-5 text-xl font-bold text-zalo">📞 {siteContent.contact.phone}</p>
 
             <div className="mt-10 grid max-w-5xl gap-px overflow-hidden border border-paper/20 bg-paper/20 sm:grid-cols-3">
               {hero.proofs.map((item) => (

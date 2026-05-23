@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { FloatingZaloButton } from "@/components/FloatingZaloButton";
 import { siteContent } from "@/data/siteContent";
 import "./globals.css";
 
@@ -14,7 +15,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="vi" data-scroll-behavior="smooth" suppressHydrationWarning>
-      <body suppressHydrationWarning>{children}</body>
+      <body suppressHydrationWarning>
+        {children}
+        <FloatingZaloButton />
+      </body>
     </html>
   );
 }

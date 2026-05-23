@@ -6,13 +6,18 @@ import { siteContent } from "@/data/siteContent";
 
 export function Navbar() {
   const [open, setOpen] = useState(false);
-  const { hero, navigation } = siteContent;
+  const { contact, hero, navigation } = siteContent;
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-stone-900/10 bg-paper/90 backdrop-blur-xl">
       <nav className="mx-auto flex h-16 max-w-7xl items-center justify-between px-5 md:px-8">
         <a href="#top" aria-label="NESTZ home">
-          <NestzLogo />
+          <span className="sm:hidden">
+            <NestzLogo compact />
+          </span>
+          <span className="hidden sm:inline">
+            <NestzLogo />
+          </span>
         </a>
 
         <div className="hidden items-center gap-8 md:flex">
@@ -31,17 +36,35 @@ export function Navbar() {
           >
             {hero.cta.label}
           </a>
+          <a
+            href={contact.zaloHref}
+            target="_blank"
+            rel="noreferrer"
+            className="border border-zalo bg-zalo px-5 py-2.5 text-sm font-bold text-white transition hover:border-charcoal hover:bg-charcoal focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zalo"
+          >
+            {contact.zaloLabel}
+          </a>
         </div>
 
-        <button
-          type="button"
-          className="grid size-10 place-items-center border border-stone-400 text-charcoal md:hidden"
-          aria-label="Toggle navigation"
-          aria-expanded={open}
-          onClick={() => setOpen((value) => !value)}
-        >
-          <span className="h-0.5 w-5 bg-current shadow-[0_7px_0_current,0_-7px_0_current]" />
-        </button>
+        <div className="flex items-center gap-2 md:hidden">
+          <a
+            href={contact.zaloHref}
+            target="_blank"
+            rel="noreferrer"
+            className="whitespace-nowrap border border-zalo bg-zalo px-2.5 py-2.5 text-[11px] font-bold text-white transition hover:opacity-90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zalo sm:px-3 sm:text-xs"
+          >
+            {contact.zaloLabel}
+          </a>
+          <button
+            type="button"
+            className="grid size-10 shrink-0 place-items-center border border-stone-400 text-charcoal"
+            aria-label="Toggle navigation"
+            aria-expanded={open}
+            onClick={() => setOpen((value) => !value)}
+          >
+            <span className="h-0.5 w-5 bg-current shadow-[0_7px_0_current,0_-7px_0_current]" />
+          </button>
+        </div>
       </nav>
 
       {open ? (

@@ -13,6 +13,9 @@ export const siteContent = {
     emailHref: "mailto:phamhoanghiepkts@gmail.com",
     facebook: "Facebook",
     facebookHref: "https://www.facebook.com/profile.php?id=61560555555304",
+    zaloLabel: "Zalo: 0832 818 828",
+    zaloFloatingLabel: "Nhắn Zalo ngay",
+    zaloHref: "https://zalo.me/0832818828",
     address: "Tuyên Quang"
   },
 
