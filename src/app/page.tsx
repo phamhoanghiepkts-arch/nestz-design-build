@@ -157,7 +157,7 @@ export default function Home() {
         </div>
       </MotionSection>
 
-      <MotionSection className="px-5 py-20 md:px-8 md:py-28">
+      <MotionSection className="hidden px-5 py-20 md:px-8 md:py-28">
         <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:items-start">
           <SectionHeader
             eyebrow={featuredProjects.eyebrow}
@@ -201,6 +201,33 @@ export default function Home() {
                 </div>
               </Link>
             ))}
+          </div>
+        </div>
+      </MotionSection>
+
+      <MotionSection className="px-5 py-20 md:px-8 md:py-28">
+        <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:items-start">
+          <SectionHeader
+            eyebrow={featuredProjects.placeholder.eyebrow}
+            title={featuredProjects.placeholder.title}
+          />
+          <div className="flex min-h-72 items-end border border-stone-300 bg-white p-6 md:min-h-80 md:p-8">
+            <div className="max-w-xl border-l-2 border-zalo pl-5">
+              <p className="text-xs font-bold uppercase tracking-[0.16em] text-zalo">
+                Portfolio NESTZ
+              </p>
+              <p className="mt-5 text-base leading-7 text-stone-700 md:text-lg">
+                {featuredProjects.placeholder.description}
+              </p>
+              <a
+                href={featuredProjects.placeholder.cta.href}
+                target="_blank"
+                rel="noreferrer"
+                className="mt-8 inline-flex border border-zalo bg-zalo px-6 py-4 text-sm font-black uppercase tracking-[0.08em] text-white transition hover:border-charcoal hover:bg-charcoal focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zalo"
+              >
+                {featuredProjects.placeholder.cta.label}
+              </a>
+            </div>
           </div>
         </div>
       </MotionSection>

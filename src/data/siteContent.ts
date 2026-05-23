@@ -152,6 +152,16 @@ export const siteContent = {
     title: "Một ví dụ để gia chủ nhìn rõ cách NESTZ tiếp cận cải tạo.",
     intro:
       "Case study sẽ được cập nhật dần bằng hình ảnh thật, nhưng cấu trúc đã sẵn sàng để ghi lại bài toán, giải pháp và quá trình thi công.",
+    placeholder: {
+      eyebrow: "Dự án",
+      title: "Dự án đang cập nhật",
+      description:
+        "Hình ảnh công trình thực tế đang được biên tập. Liên hệ trực tiếp để xem portfolio.",
+      cta: {
+        label: "Nhắn Zalo xem ảnh",
+        href: "https://zalo.me/0987654321"
+      }
+    },
     items: [
       {
         title: "Cải tạo nhà phố 112",
