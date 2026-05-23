@@ -46,12 +46,22 @@ export default function Home() {
               <p className="text-base leading-7 text-stone-100 md:text-xl">
                 {hero.subtitle}
               </p>
-              <a
-                href={hero.cta.href}
-                className="w-fit border border-clay bg-clay px-6 py-4 text-sm font-black uppercase tracking-[0.08em] text-paper shadow-[0_16px_42px_rgba(184,88,43,0.34)] transition hover:border-paper hover:bg-paper hover:text-charcoal"
-              >
-                {hero.cta.label}
-              </a>
+              <div className="flex flex-wrap gap-3 md:flex-col md:items-end">
+                <a
+                  href={hero.cta.href}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="w-fit border border-clay bg-clay px-6 py-4 text-sm font-black uppercase tracking-[0.08em] text-paper shadow-[0_16px_42px_rgba(184,88,43,0.34)] transition hover:border-paper hover:bg-paper hover:text-charcoal"
+                >
+                  {hero.cta.label}
+                </a>
+                <a
+                  href={hero.secondaryCta.href}
+                  className="w-fit border border-paper/50 px-6 py-4 text-sm font-black uppercase tracking-[0.08em] text-paper transition hover:border-paper hover:bg-paper hover:text-charcoal"
+                >
+                  {hero.secondaryCta.label}
+                </a>
+              </div>
             </div>
             <p className="mt-5 text-xl font-bold text-zalo">📞 {siteContent.contact.phone}</p>
 

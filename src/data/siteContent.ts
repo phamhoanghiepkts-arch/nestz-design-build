@@ -26,15 +26,24 @@ export const siteContent = {
     { label: "Liên hệ", href: "/#lead-form" }
   ],
 
+  navigationCta: {
+    label: "Nhận tư vấn hướng đi",
+    href: "/#lead-form"
+  },
+
   hero: {
-    eyebrow: "Kiến trúc tinh tế nhưng thực dụng · Tuyên Quang",
+    eyebrow: "Kiến trúc sư tại Tuyên Quang · Có mặt tại công trình",
     headline: "Thiết kế đẹp là chưa đủ. Nhà còn phải xây đúng.",
     subtitle:
-      "NESTZ thiết kế và thi công nhà ở tại Tuyên Quang cho những gia đình bận rộn, muốn làm nhà rõ ràng hơn: biết nên bắt đầu từ đâu, chi phí cần kiểm soát gì và bản vẽ sẽ đi ra công trường như thế nào.",
+      "NESTZ thiết kế và thi công nhà ở tại Tuyên Quang. Một kiến trúc sư — một số điện thoại — từ bản vẽ đến ngày bàn giao. Không phát sinh ngoài hợp đồng.",
     // NESTZ edit point: update primary CTA text here.
     cta: {
-      label: "Nhận tư vấn hướng đi",
-      href: "/#lead-form"
+      label: "Nhắn Zalo tư vấn miễn phí",
+      href: "https://zalo.me/0987654321"
+    },
+    secondaryCta: {
+      label: "Xem dịch vụ",
+      href: "#services"
     },
     proofs: [
       "Kiến trúc tinh tế nhưng thực dụng",

@@ -6,7 +6,7 @@ import { siteContent } from "@/data/siteContent";
 
 export function Navbar() {
   const [open, setOpen] = useState(false);
-  const { contact, hero, navigation } = siteContent;
+  const { contact, navigation, navigationCta } = siteContent;
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-stone-900/10 bg-paper/90 backdrop-blur-xl">
@@ -31,10 +31,10 @@ export function Navbar() {
             </a>
           ))}
           <a
-            href={hero.cta.href}
+            href={navigationCta.href}
             className="border border-charcoal bg-charcoal px-5 py-2.5 text-sm font-bold text-paper transition hover:border-clay hover:bg-clay"
           >
-            {hero.cta.label}
+            {navigationCta.label}
           </a>
           <a
             href={contact.zaloHref}
@@ -81,11 +81,11 @@ export function Navbar() {
               </a>
             ))}
             <a
-              href={hero.cta.href}
+              href={navigationCta.href}
               className="mt-2 border border-charcoal bg-charcoal px-4 py-3 text-center text-sm font-bold text-paper"
               onClick={() => setOpen(false)}
             >
-              {hero.cta.label}
+              {navigationCta.label}
             </a>
           </div>
         </div>
