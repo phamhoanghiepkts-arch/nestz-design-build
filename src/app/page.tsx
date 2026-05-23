@@ -245,22 +245,28 @@ export default function Home() {
               {behindBuild.intro}
             </p>
           </div>
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {/* Replace first real gallery images with images.worksiteGallery: public/images/worksite-01.jpg, public/images/worksite-02.jpg, and public/images/worksite-03.jpg. */}
+          <div className="grid gap-4 md:grid-cols-2">
+            {/* Upload real worksite photos to public/images/worksite-01.jpg through public/images/worksite-06.jpg. */}
             {behindBuild.gallery.map((item, index) => (
               <div
                 key={item.title}
-                className="gallery-tile flex min-h-64 flex-col justify-between p-5"
+                className="group relative flex min-h-64 flex-col justify-between overflow-hidden border border-paper/15 bg-charcoal p-5"
               >
-                <span className="text-sm text-stone-300">0{index + 1}</span>
-                <div>
+                <Image
+                  src={images.worksiteGallery[index].src}
+                  alt={images.worksiteGallery[index].alt}
+                  fill
+                  loading="lazy"
+                  sizes="(min-width: 768px) 38vw, 100vw"
+                  className="object-cover transition duration-700 group-hover:scale-[1.025]"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/50 to-charcoal/16" />
+                <span className="relative text-sm text-stone-200">0{index + 1}</span>
+                <div className="relative">
                   <p className="max-w-52 text-2xl font-semibold leading-tight">
                     {item.title}
                   </p>
                   <p className="mt-3 text-sm leading-6 text-stone-300">{item.desc}</p>
-                  <p className="mt-4 text-xs text-stone-400">
-                    {images.worksiteGallery[index]}
-                  </p>
                 </div>
               </div>
             ))}

@@ -6,12 +6,30 @@ export const images = {
     after: "/images/before-after-after.jpg"
   },
   worksiteGallery: [
-    "/images/worksite-01.jpg",
-    "/images/worksite-02.jpg",
-    "/images/worksite-03.jpg",
-    "/images/worksite-04.jpg",
-    "/images/worksite-05.jpg",
-    "/images/worksite-06.jpg"
+    {
+      src: "/images/worksite-01.jpg",
+      alt: "Khảo sát công trình thực tế tại Tuyên Quang"
+    },
+    {
+      src: "/images/worksite-02.jpg",
+      alt: "Kiểm tra kết cấu móng cột dầm sàn"
+    },
+    {
+      src: "/images/worksite-03.jpg",
+      alt: "Kiểm soát vật tư vào công trình"
+    },
+    {
+      src: "/images/worksite-04.jpg",
+      alt: "Kiểm tra thép và bê tông"
+    },
+    {
+      src: "/images/worksite-05.jpg",
+      alt: "Trao đổi với gia chủ tại công trường"
+    },
+    {
+      src: "/images/worksite-06.jpg",
+      alt: "Quy trình cải tạo nhà cũ"
+    }
   ],
   projectGallery: [
     "/images/project-01.jpg",
